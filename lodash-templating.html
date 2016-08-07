@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- LoDash library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.js"></script>
+</head>
+<body>
+    <script type="text/template" id="user-profile">
+        <header>
+            <h1><%-name%></h1>
+            <img src="<%-photo%>" alt="my photo" title="Это я" class="avatar">
+            <p><%-status%></p>
+        </header>
+        <section class="info">
+            <h2>Хочу учить фронтенд, потому что:</h2>
+            <ul class="why">
+                <% _(profile.objectives).forEach(function(value){ %>
+                <li>
+                    <%- value %>
+                </li>
+                <% }); %>
+            </ul>
+
+        </section>
+        <section class="contact">
+            <p>Мой контактный телефон:</p>
+            <p><%-phone%></p>
+            <p>Мой профиль вконтакте:</p>
+            <p><a href="<%-vk%>">vk.com</a></p>
+        </section>
+        <footer>
+            <p>Мой фидбэк:</p>
+            <p><%-feedback%></p>
+        </footer>
+    </script>
+    <script src="js/profile.js"></script>
+    <script src="js/render.js"></script>
+</body>
+</html>
