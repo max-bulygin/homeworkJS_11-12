@@ -20,8 +20,7 @@
     max-width: 100%;
 }
 
-.crsl-arrow-left,
-.crsl-arrow-right {
+.crsl-arrow {
     float: left;
     display: block;
     border: 1px solid grey;
@@ -30,15 +29,15 @@
     margin-top: 50px;
 }
 
-.crsl-arrow-left:hover, .crsl-arrow-right:hover {
+.crsl-arrow:hover {
     cursor: pointer;
     background-color: grey;
 }
 
-.crsl-arrow-left {
+.crsl-arrow--left {
     margin-right: 25px;
 }
 
-.crsl-arrow-right {
+.crsl-arrow--right {
     margin-left: 25px;
 }
