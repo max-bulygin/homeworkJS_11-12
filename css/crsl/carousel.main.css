@@ -1,0 +1,44 @@
+.crsl-container {
+    width: 90%;
+    overflow: hidden;
+    float: left;
+}
+
+.crsl-list {
+    list-style: none;
+    width: 10000px;
+    padding: 0;
+    position: relative;
+}
+
+.crsl-item {
+    display: block;
+    float: left;
+}
+
+.crsl-element img {
+    max-width: 100%;
+}
+
+.crsl-arrow-left,
+.crsl-arrow-right {
+    float: left;
+    display: block;
+    border: 1px solid grey;
+    background-color: lightgrey;
+    padding: 5px;
+    margin-top: 50px;
+}
+
+.crsl-arrow-left:hover, .crsl-arrow-right:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+
+.crsl-arrow-left {
+    margin-right: 25px;
+}
+
+.crsl-arrow-right {
+    margin-left: 25px;
+}
