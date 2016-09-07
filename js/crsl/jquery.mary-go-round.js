@@ -21,7 +21,7 @@
                         $currentLeftValue -= $pixelsOffset;
                     }
                 }
-                $elementsList.animate({left: $currentLeftValue + "px"}, 500);
+                $elementsList.animate({left: $currentLeftValue + 'px'}, 500);
             })
         });
 
@@ -31,5 +31,5 @@
 }( jQuery ));
 
 $(function () {
-    $('.crsl').maryGoRound(1500);
+    $('.crsl').maryGoRound(800);
 });

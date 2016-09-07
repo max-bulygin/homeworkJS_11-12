@@ -1,5 +1,9 @@
-.crsl-container {
+.crsl {
     width: 90%;
+    margin: auto;
+}
+.crsl-container {
+    width: 800px;
     overflow: hidden;
     float: left;
 }
